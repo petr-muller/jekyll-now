@@ -1,6 +1,7 @@
 ---
 layout: post
-title: FIXME
+title: Some Title
+categories: category
+tags:
+  - tag
 ---
-
-FIXME
