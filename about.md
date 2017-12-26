@@ -9,7 +9,7 @@ Quality-Obsessed Software Craftsman, Wannabe Scientist.
 Currently building
 [Fiori](https://www.sap.com/product/technology-platform/fiori.html)
 applications with FXperience team in [SAP Labs
-Brno](https://www.facebook.com/sapLabsBrno/).
+Brno](https://www.facebook.com/SAPLabsCZ/).
 
 ### More Information
 
