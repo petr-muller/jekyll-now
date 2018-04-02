@@ -84,10 +84,27 @@ allocate sufficient time :(
 
 # Books
 
-## Agile Testing
+## [Agile Testing](http://a.co/bRIw1v0)
 
-## Coders at Work
+I have started reading this one in January already but had hard time finishing it because it became
+quite tedious to read (it tends to be repetitive and vague). I managed to finish it in March,
+finally. It is starting to show its age because it focuses so much on managing situations where a
+tester's company is not that friendly to Agile, transitioning from waterfall or other non-ideal
+situations not that common today. I liked the Agile Testing Quadrant and the last part about how
+testers can contribute in different stages of an agile project.
+
+## [Coders at Work](http://www.codersatwork.com/)
+
+This is also a fatty (around 600 pages) but it reads well being in an interview format; at least for
+me it does. I am currently somewhere around the middle. It does not give a reader any straight
+applicable material but it is interesting to read because the interviewees have different
+achievements and backgrounds. I especially like to compare answers of different people to identical
+questions.
 
 # Misc
 
-# Next
+I was not doing just IT stuff. I finally obtained my driving license, which actually took quite a
+lot of time, although I managed to pass both exams on a first try. I also spent a lot of time
+on physiotherapy exercises to treat my [jumper's
+knee](https://en.wikipedia.org/wiki/Patellar_tendinitis). It healt nicely but it seems to be back
+after few football matches :(
