@@ -7,6 +7,8 @@ tags:
   - static-analysis
 ---
 
+**GitHub repository:** [petr-muller/pyff](https://github.com/petr-muller/pyff)
+
 The idea of syntactic/semantic-aware diff tool was in my head since we needed
 something similar for a project we were working in [Red Hat
 Lab](https://research.redhat.com/) together with
