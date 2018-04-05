@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sabbatical, Month 2
-categories: Personal
+categories: personal
 tags:
   - sabbatical
 ---
