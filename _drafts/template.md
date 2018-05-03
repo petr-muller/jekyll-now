@@ -10,6 +10,9 @@ tags:
 
 ## Basics
 
+Short summary. Language. License. Project link. Development status. Authorship.
+Documentation.
+
 ## Installation and usage
 
 ## When would I use it?

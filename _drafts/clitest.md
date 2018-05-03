@@ -14,7 +14,13 @@ for CLIs.
 
 Given a text file containing snippets of shell sessions (prompts with commands
 and their expected outputs), `clitest` executes the snippets and verifies that
-the actual output matches the described output.
+the actual output matches the described output. It is written in shell language.
+The project lives on [GitHub](https://github.com/aureliojargas/clitest) and is
+available under MIT license. The project does not see much development anymore
+but that is fairly understandable given its simplicity. Nevertheless, the author
+continues to maintain deliverables and documentation. The project has a good
+[README](https://github.com/aureliojargas/clitest/blob/master/README.md)
+documentation.
 
 ## Installation and usage
 
@@ -23,6 +29,39 @@ script with no external dependencies. This makes it easy to include copies of
 `clitest` in repositories. I was curious how is the little tool implemented in
 shell and I discovered the code is actually quite nice and readable. I could not
 resist to quickly run [ShellCheck](https://www.shellcheck.net/) on it and it
-only spat out few style issues, so nice job.
+only spat out few style issues: nice job!
+
+I tried to use `clitest` as testing driver for
+[pyff](https://github.com/petr-muller/pyff) project examples, so that I only
+need to provide expected output for each example. It worked nice, although the
+way how `clitest` executes the commands to test makes it a little sensitive
+about `$CWD`, `$PATH` and the like. Fortunately, these are quite straightforward
+to sort out. The test files for `pyff` are normal Python source code files, so I
+needed to embed the the `clitest` instructions into Python comments (lines
+starting with the `#` character). This is possible by using the `--prefix`
+option, which tunes the way how `clitest` searches for testable snippets in
+files.
+
+A minor pitfall I have encountered is that `pyff` does not have entirelly
+deterministic output. The output is correct but ordering of some elements may be
+different between runs. The output is fully matched against the expected output,
+so it is harder to use `clitest` for these cases (I have decided to make `pyff`
+deterministic, even if ordering does not really matter). There is a `clitest`
+feature which can alter the matching when using the [inline output
+syntax](https://github.com/aureliojargas/clitest/blob/master/README.md#alternative-syntax-inline-output).
 
 ## When would I use it?
+
+I like `clitest` because it is a single file drop-in without dependencies. This
+makes it easy to just drop it into a repository where it can serve as a
+lightweight integration test driver: you just need some input files, define a
+way how to execute the program under test and specify expected output.
+
+A second, nifty use case is mentioned in `clitest` documentation: it can be
+nicely used to test the code snippets in your documenation for correctness.
+Often, your documentation will be written in markdown or something similar, and
+it will contain snippets of how to execute the program and what is the expected
+output. This way, you can feed your documentation straight into `clitest` which
+can, without further work, validate that your examples are still correct. You
+may even do this within a CI automatically, so your documentation is always
+up-to-date.
